@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Cygwin</id>
+    <version>1.7.32</version>
+    <authors>Lars Brinkhoff</authors>
+    <owners>Lars Brinkhoff</owners>
+    <licenseUrl>https://cygwin.com/licensing.html</licenseUrl>
+    <projectUrl>http://cygwin.com/</projectUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/de/d/dc/Cygwin-logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Cygwin x64</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>cygwin unix native command</tags>
+  </metadata>
+</package>

@@ -1,0 +1,694 @@
+2014/10/29 12:17:58 Starting cygwin install, version 2.852
+2014/10/29 12:17:58 User has NO backup/restore rights
+2014/10/29 12:17:58 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/29 12:17:58 Could not open Service control manager
+2014/10/29 12:17:58 root: C:/tools/cygwin user
+2014/10/29 12:17:58 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/29 12:17:58 net: Direct
+2014/10/29 12:17:58 site: http://cygwin.mirror.constant.com/
+2014/10/29 12:18:00 io_stream_cygfile: fopen(/etc/setup/installed.db) failed 2 No such file or directory
+2014/10/29 12:18:00 io_stream_cygfile: fopen(/etc/setup/timestamp) failed 2 No such file or directory
+2014/10/29 12:18:00 Added manual package gcc-core
+2014/10/29 12:18:00 Added manual package make
+2014/10/29 12:18:00 Adding required dependency binutils: Selecting version 2.24.51-5 for installation.
+2014/10/29 12:18:00 Adding required dependency bzip2: Selecting version 1.0.6-2 for installation.
+2014/10/29 12:18:00 Adding required dependency ca-certificates: Selecting version 2.1-1 for installation.
+2014/10/29 12:18:00 Adding required dependency groff: Selecting version 1.22.2-2 for installation.
+2014/10/29 12:18:00 Adding required dependency less: Selecting version 458-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libargp: Selecting version 20110921-2 for installation.
+2014/10/29 12:18:00 Adding required dependency libatomic1: Selecting version 4.8.3-3 for installation.
+2014/10/29 12:18:00 Adding required dependency libattr1: Selecting version 2.4.46-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libblkid1: Selecting version 2.24.2-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libbz2_1: Selecting version 1.0.6-2 for installation.
+2014/10/29 12:18:00 Adding required dependency libcloog-isl4: Selecting version 0.18.0-2 for installation.
+2014/10/29 12:18:00 Adding required dependency libcrypt0: Selecting version 1.1-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libdb5.3: Selecting version 5.3.21-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libffi6: Selecting version 3.0.13-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libgcc1: Selecting version 4.8.3-3 for installation.
+2014/10/29 12:18:00 Adding required dependency libgdbm4: Selecting version 1.11-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libgmp10: Selecting version 6.0.0a-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libgomp1: Selecting version 4.8.3-3 for installation.
+2014/10/29 12:18:00 Adding required dependency libiconv: Selecting version 1.14-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libiconv2: Selecting version 1.14-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libintl8: Selecting version 0.18.3.2-2 for installation.
+2014/10/29 12:18:00 Adding required dependency libisl10: Selecting version 0.11.1-2 for installation.
+2014/10/29 12:18:00 Adding required dependency liblzma5: Selecting version 5.0.5-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libmpc3: Selecting version 1.0.2-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libmpfr4: Selecting version 3.1.2-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libncursesw10: Selecting version 5.9-20140524-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libopenssl100: Selecting version 1.0.1j-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libp11-kit0: Selecting version 0.20.7-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libpcre1: Selecting version 8.35-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libpipeline1: Selecting version 1.3.0-3 for installation.
+2014/10/29 12:18:00 Adding required dependency libpopt0: Selecting version 1.16-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libquadmath0: Selecting version 4.8.3-3 for installation.
+2014/10/29 12:18:00 Adding required dependency libreadline7: Selecting version 6.2-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libssp0: Selecting version 4.8.3-3 for installation.
+2014/10/29 12:18:00 Adding required dependency libstdc++6: Selecting version 4.8.3-3 for installation.
+2014/10/29 12:18:00 Adding required dependency libtasn1_6: Selecting version 3.3-1 for installation.
+2014/10/29 12:18:00 Adding required dependency libuuid1: Selecting version 2.24.2-1 for installation.
+2014/10/29 12:18:00 Adding required dependency lynx: Selecting version 2.8.7-2 for installation.
+2014/10/29 12:18:00 Adding required dependency p11-kit: Selecting version 0.20.7-1 for installation.
+2014/10/29 12:18:00 Adding required dependency p11-kit-trust: Selecting version 0.20.7-1 for installation.
+2014/10/29 12:18:00 Adding required dependency perl: Selecting version 5.14.4-1 for installation.
+2014/10/29 12:18:00 Adding required dependency popt: Selecting version 1.16-1 for installation.
+2014/10/29 12:18:00 Adding required dependency texinfo: Selecting version 5.2-2 for installation.
+2014/10/29 12:18:00 Adding required dependency w32api-headers: Selecting version 3.2.0-1 for installation.
+2014/10/29 12:18:00 Adding required dependency w32api-runtime: Selecting version 3.2.0-1 for installation.
+2014/10/29 12:18:00 Adding required dependency xz: Selecting version 5.0.5-1 for installation.
+2014/10/29 12:18:00 Adding required dependency _autorebase: Selecting version 000253-1 for installation.
+2014/10/29 12:18:00 Adding required dependency _update-info-dir: Selecting version 00338-1 for installation.
+2014/10/29 12:18:01 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_autorebase/_autorebase-000253-1.tar.bz2
+2014/10/29 12:18:01 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_update-info-dir/_update-info-dir-00338-1.tar.bz2
+2014/10/29 12:18:02 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2014/10/29 12:18:02 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/base-cygwin/base-cygwin-3.3-1.tar.bz2
+2014/10/29 12:18:03 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/base-files/base-files-4.2-3.tar.xz
+2014/10/29 12:18:04 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bash/bash-4.1.17-9.tar.xz
+2014/10/29 12:18:06 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/binutils/binutils-2.24.51-5.tar.xz
+2014/10/29 12:18:07 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2014/10/29 12:18:08 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ca-certificates/ca-certificates-2.1-1.tar.xz
+2014/10/29 12:18:13 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/coreutils/coreutils-8.23-4.tar.xz
+2014/10/29 12:18:14 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cygutils/cygutils-1.4.14-1.tar.bz2
+2014/10/29 12:18:17 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cygwin/cygwin-1.7.32-1.tar.xz
+2014/10/29 12:18:18 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/dash/dash-0.5.8-3.tar.xz
+2014/10/29 12:18:18 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/editrights/editrights-1.02-1.tar.bz2
+2014/10/29 12:18:19 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/file/file-5.19-1.tar.xz
+2014/10/29 12:18:21 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/findutils/findutils-4.5.12-1.tar.xz
+2014/10/29 12:18:23 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gawk/gawk-4.1.1-1.tar.xz
+2014/10/29 12:18:30 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/gcc-core/gcc-core-4.8.3-3.tar.xz
+2014/10/29 12:18:30 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/getent/getent-2.18.90-2.tar.xz
+2014/10/29 12:18:31 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/grep/grep-2.20-1.tar.xz
+2014/10/29 12:18:33 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/groff/groff-1.22.2-2.tar.xz
+2014/10/29 12:18:34 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gzip/gzip-1.6-1.tar.xz
+2014/10/29 12:18:34 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2014/10/29 12:18:35 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2014/10/29 12:18:36 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/less/less-458-1.tar.bz2
+2014/10/29 12:18:36 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libargp/libargp-20110921-2.tar.bz2
+2014/10/29 12:18:37 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libatomic1/libatomic1-4.8.3-3.tar.xz
+2014/10/29 12:18:37 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/attr/libattr1/libattr1-2.4.46-1.tar.bz2
+2014/10/29 12:18:38 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.24.2-1.tar.xz
+2014/10/29 12:18:38 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2014/10/29 12:18:39 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cloog-isl/libcloog-isl4/libcloog-isl4-0.18.0-2.tar.bz2
+2014/10/29 12:18:39 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/crypt/libcrypt0/libcrypt0-1.1-1.tar.bz2
+2014/10/29 12:18:40 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/db/libdb5.3/libdb5.3-5.3.21-1.tar.bz2
+2014/10/29 12:18:41 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libffi/libffi6/libffi6-3.0.13-1.tar.bz2
+2014/10/29 12:18:41 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libgcc1/libgcc1-4.8.3-3.tar.xz
+2014/10/29 12:18:42 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gdbm/libgdbm4/libgdbm4-1.11-1.tar.xz
+2014/10/29 12:18:42 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gmp/libgmp10/libgmp10-6.0.0a-1.tar.xz
+2014/10/29 12:18:43 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libgomp1/libgomp1-4.8.3-3.tar.xz
+2014/10/29 12:18:44 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libiconv/libiconv-1.14-1.tar.bz2
+2014/10/29 12:18:45 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libiconv/libiconv2/libiconv2-1.14-1.tar.bz2
+2014/10/29 12:18:45 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gettext/libintl8/libintl8-0.18.3.2-2.tar.xz
+2014/10/29 12:18:47 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/isl/libisl10/libisl10-0.11.1-2.tar.bz2
+2014/10/29 12:18:47 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/xz/liblzma5/liblzma5-5.0.5-1.tar.xz
+2014/10/29 12:18:48 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mpclib/libmpc3/libmpc3-1.0.2-1.tar.xz
+2014/10/29 12:18:48 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mpfr/libmpfr4/libmpfr4-3.1.2-1.tar.bz2
+2014/10/29 12:18:49 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ncurses/libncursesw10/libncursesw10-5.9-20140524-1.tar.xz
+2014/10/29 12:18:51 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/openssl/libopenssl100/libopenssl100-1.0.1j-1.tar.xz
+2014/10/29 12:18:51 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/p11-kit/libp11-kit0/libp11-kit0-0.20.7-1.tar.xz
+2014/10/29 12:18:52 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/pcre/libpcre1/libpcre1-8.35-1.tar.xz
+2014/10/29 12:18:52 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libpipeline/libpipeline1/libpipeline1-1.3.0-3.tar.xz
+2014/10/29 12:18:53 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/popt/libpopt0/libpopt0-1.16-1.tar.xz
+2014/10/29 12:18:53 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libquadmath0/libquadmath0-4.8.3-3.tar.xz
+2014/10/29 12:18:54 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/readline/libreadline7/libreadline7-6.2-1.tar.bz2
+2014/10/29 12:18:55 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libssp0/libssp0-4.8.3-3.tar.xz
+2014/10/29 12:18:55 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libstdc++6/libstdc++6-4.8.3-3.tar.xz
+2014/10/29 12:18:56 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libtasn1/libtasn1_6/libtasn1_6-3.3-1.tar.bz2
+2014/10/29 12:18:56 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.24.2-1.tar.xz
+2014/10/29 12:18:57 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/10/29 12:18:58 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/lynx/lynx-2.8.7-2.tar.bz2
+2014/10/29 12:18:59 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/make/make-4.0-2.tar.xz
+2014/10/29 12:19:01 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/man-db/man-db-2.6.7-2.tar.xz
+2014/10/29 12:19:02 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/10/29 12:19:02 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/p11-kit/p11-kit-0.20.7-1.tar.xz
+2014/10/29 12:19:03 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/p11-kit/p11-kit-trust/p11-kit-trust-0.20.7-1.tar.xz
+2014/10/29 12:19:08 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/perl/perl-5.14.4-1.tar.bz2
+2014/10/29 12:19:09 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/popt/popt-1.16-1.tar.xz
+2014/10/29 12:19:09 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/rebase/rebase-4.4.1-1.tar.bz2
+2014/10/29 12:19:10 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/run/run-1.3.3-1.tar.xz
+2014/10/29 12:19:11 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/sed/sed-4.2.2-3.tar.bz2
+2014/10/29 12:19:12 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/tar/tar-1.27.1-1.tar.xz
+2014/10/29 12:19:13 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ncurses/terminfo/terminfo-5.9-20140524-1.tar.xz
+2014/10/29 12:19:14 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/texinfo/texinfo-5.2-2.tar.xz
+2014/10/29 12:19:16 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/tzcode/tzcode-2013c-1.tar.bz2
+2014/10/29 12:19:17 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/util-linux-2.24.2-1.tar.xz
+2014/10/29 12:19:18 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.417-1.tar.xz
+2014/10/29 12:19:20 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/w32api-headers/w32api-headers-3.2.0-1.tar.xz
+2014/10/29 12:19:22 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/w32api-runtime/w32api-runtime-3.2.0-1.tar.xz
+2014/10/29 12:19:22 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/10/29 12:19:23 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/windows-default-manifest/windows-default-manifest-6.4-1.tar.xz
+2014/10/29 12:19:23 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/xz/xz-5.0.5-1.tar.xz
+2014/10/29 12:19:24 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/zlib/zlib0/zlib0-1.2.8-1.tar.bz2
+2014/10/29 12:19:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_autorebase/_autorebase-000253-1.tar.bz2
+2014/10/29 12:19:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_update-info-dir/_update-info-dir-00338-1.tar.bz2
+2014/10/29 12:19:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2014/10/29 12:19:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/base-cygwin/base-cygwin-3.3-1.tar.bz2
+2014/10/29 12:19:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/base-files/base-files-4.2-3.tar.xz
+2014/10/29 12:19:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bash/bash-4.1.17-9.tar.xz
+2014/10/29 12:19:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/binutils/binutils-2.24.51-5.tar.xz
+2014/10/29 12:19:26 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2014/10/29 12:19:26 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ca-certificates/ca-certificates-2.1-1.tar.xz
+2014/10/29 12:19:26 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/coreutils/coreutils-8.23-4.tar.xz
+2014/10/29 12:19:26 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cygutils/cygutils-1.4.14-1.tar.bz2
+2014/10/29 12:19:26 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cygwin/cygwin-1.7.32-1.tar.xz
+2014/10/29 12:19:27 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/dash/dash-0.5.8-3.tar.xz
+2014/10/29 12:19:27 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/editrights/editrights-1.02-1.tar.bz2
+2014/10/29 12:19:27 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/file/file-5.19-1.tar.xz
+2014/10/29 12:19:27 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/findutils/findutils-4.5.12-1.tar.xz
+2014/10/29 12:19:27 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gawk/gawk-4.1.1-1.tar.xz
+2014/10/29 12:19:27 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/gcc-core/gcc-core-4.8.3-3.tar.xz
+2014/10/29 12:19:28 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/getent/getent-2.18.90-2.tar.xz
+2014/10/29 12:19:28 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/grep/grep-2.20-1.tar.xz
+2014/10/29 12:19:28 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/groff/groff-1.22.2-2.tar.xz
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gzip/gzip-1.6-1.tar.xz
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/less/less-458-1.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libargp/libargp-20110921-2.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libatomic1/libatomic1-4.8.3-3.tar.xz
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/attr/libattr1/libattr1-2.4.46-1.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.24.2-1.tar.xz
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cloog-isl/libcloog-isl4/libcloog-isl4-0.18.0-2.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/crypt/libcrypt0/libcrypt0-1.1-1.tar.bz2
+2014/10/29 12:19:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/db/libdb5.3/libdb5.3-5.3.21-1.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libffi/libffi6/libffi6-3.0.13-1.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libgcc1/libgcc1-4.8.3-3.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gdbm/libgdbm4/libgdbm4-1.11-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gmp/libgmp10/libgmp10-6.0.0a-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libgomp1/libgomp1-4.8.3-3.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libiconv/libiconv-1.14-1.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libiconv/libiconv2/libiconv2-1.14-1.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gettext/libintl8/libintl8-0.18.3.2-2.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/isl/libisl10/libisl10-0.11.1-2.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/xz/liblzma5/liblzma5-5.0.5-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mpclib/libmpc3/libmpc3-1.0.2-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mpfr/libmpfr4/libmpfr4-3.1.2-1.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ncurses/libncursesw10/libncursesw10-5.9-20140524-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/openssl/libopenssl100/libopenssl100-1.0.1j-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/p11-kit/libp11-kit0/libp11-kit0-0.20.7-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/pcre/libpcre1/libpcre1-8.35-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libpipeline/libpipeline1/libpipeline1-1.3.0-3.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libquadmath0/libquadmath0-4.8.3-3.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/readline/libreadline7/libreadline7-6.2-1.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libssp0/libssp0-4.8.3-3.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/gcc/libstdc++6/libstdc++6-4.8.3-3.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libtasn1/libtasn1_6/libtasn1_6-3.3-1.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.24.2-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/lynx/lynx-2.8.7-2.tar.bz2
+2014/10/29 12:19:30 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/make/make-4.0-2.tar.xz
+2014/10/29 12:19:31 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/man-db/man-db-2.6.7-2.tar.xz
+2014/10/29 12:19:31 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/10/29 12:19:31 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/p11-kit/p11-kit-0.20.7-1.tar.xz
+2014/10/29 12:19:31 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/p11-kit/p11-kit-trust/p11-kit-trust-0.20.7-1.tar.xz
+2014/10/29 12:19:31 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/perl/perl-5.14.4-1.tar.bz2
+2014/10/29 12:19:37 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/popt/popt-1.16-1.tar.xz
+2014/10/29 12:19:37 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/rebase/rebase-4.4.1-1.tar.bz2
+2014/10/29 12:19:37 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/run/run-1.3.3-1.tar.xz
+2014/10/29 12:19:37 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/sed/sed-4.2.2-3.tar.bz2
+2014/10/29 12:19:37 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/tar/tar-1.27.1-1.tar.xz
+2014/10/29 12:19:37 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ncurses/terminfo/terminfo-5.9-20140524-1.tar.xz
+2014/10/29 12:19:37 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/texinfo/texinfo-5.2-2.tar.xz
+2014/10/29 12:19:38 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/tzcode/tzcode-2013c-1.tar.bz2
+2014/10/29 12:19:40 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/util-linux-2.24.2-1.tar.xz
+2014/10/29 12:19:40 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.417-1.tar.xz
+2014/10/29 12:19:40 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/w32api-headers/w32api-headers-3.2.0-1.tar.xz
+2014/10/29 12:19:42 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/w32api-runtime/w32api-runtime-3.2.0-1.tar.xz
+2014/10/29 12:19:43 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/10/29 12:19:43 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/windows-default-manifest/windows-default-manifest-6.4-1.tar.xz
+2014/10/29 12:19:43 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/xz/xz-5.0.5-1.tar.xz
+2014/10/29 12:19:43 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/zlib/zlib0/zlib0-1.2.8-1.tar.bz2
+2014/10/29 12:19:43 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/000-cygwin-post-install.sh"
+2014/10/29 12:19:44 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/texinfo.sh"
+2014/10/29 12:19:44 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/update-info-dir.sh"
+2014/10/29 12:19:47 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/bash.sh"
+2014/10/29 12:19:47 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/coreutils.sh"
+2014/10/29 12:19:47 running: cmd.exe /c "C:\tools\cygwin\etc\postinstall\autorebase.bat"
+2014/10/29 12:19:48 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-mketc.sh"
+2014/10/29 12:19:48 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-profile.sh"
+2014/10/29 12:19:49 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/ca-certificates.sh"
+2014/10/29 12:19:50 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/lynx.sh"
+2014/10/29 12:19:50 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/man-db.sh"
+2014/10/29 12:19:50 Ending cygwin install
+2014/10/29 14:41:55 Starting cygwin install, version 2.852
+2014/10/29 14:41:55 User has NO backup/restore rights
+2014/10/29 14:41:55 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/29 14:41:55 Could not open Service control manager
+2014/10/29 14:41:55 root: C:/tools/cygwin user
+2014/10/29 14:41:55 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/29 14:41:55 net: Direct
+2014/10/29 14:41:55 site: http://cygwin.mirror.constant.com/
+2014/10/29 14:41:57 Added manual package gcc-core
+2014/10/29 14:41:57 Added manual package git
+2014/10/29 14:41:57 Added manual package make
+2014/10/29 14:41:57 Adding required dependency csih: Selecting version 0.9.7-1 for installation.
+2014/10/29 14:41:57 Adding required dependency cygrunsrv: Selecting version 1.61-1 for installation.
+2014/10/29 14:41:57 Adding required dependency diffutils: Selecting version 3.3-2 for installation.
+2014/10/29 14:41:57 Adding required dependency libcom_err2: Selecting version 1.42.10-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libcurl4: Selecting version 7.38.0-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libedit0: Selecting version 20130712-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libexpat1: Selecting version 2.1.0-3 for installation.
+2014/10/29 14:41:57 Adding required dependency libgssapi_krb5_2: Selecting version 1.12.2-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libidn11: Selecting version 1.26-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libk5crypto3: Selecting version 1.12.2-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libkrb5support0: Selecting version 1.12.2-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libkrb5_3: Selecting version 1.12.2-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libopenldap2_4_2: Selecting version 2.4.35-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libsasl2_3: Selecting version 2.1.26-8 for installation.
+2014/10/29 14:41:57 Adding required dependency libsqlite3_0: Selecting version 3.8.6-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libssh2_1: Selecting version 1.4.2-1 for installation.
+2014/10/29 14:41:57 Adding required dependency libuuid-devel: Selecting version 2.24.2-1 for installation.
+2014/10/29 14:41:57 Adding required dependency openssh: Selecting version 6.7p1-1 for installation.
+2014/10/29 14:41:57 Adding required dependency perl-Error: Selecting version 0.17019-1 for installation.
+2014/10/29 14:41:57 Adding required dependency python: Selecting version 2.7.8-1 for installation.
+2014/10/29 14:41:57 Adding required dependency rsync: Selecting version 3.0.9-1 for installation.
+2014/10/29 14:41:58 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/csih/csih-0.9.7-1.tar.bz2
+2014/10/29 14:41:59 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cygrunsrv/cygrunsrv-1.61-1.tar.xz
+2014/10/29 14:42:00 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/diffutils/diffutils-3.3-2.tar.xz
+2014/10/29 14:42:03 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/git/git-2.1.1-1.tar.xz
+2014/10/29 14:42:03 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/e2fsprogs/libcom_err2/libcom_err2-1.42.10-1.tar.xz
+2014/10/29 14:42:04 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/curl/libcurl4/libcurl4-7.38.0-1.tar.xz
+2014/10/29 14:42:05 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libedit/libedit0/libedit0-20130712-1.tar.xz
+2014/10/29 14:42:05 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/expat/libexpat1/libexpat1-2.1.0-3.tar.bz2
+2014/10/29 14:42:06 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libgssapi_krb5_2/libgssapi_krb5_2-1.12.2-1.tar.xz
+2014/10/29 14:42:06 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libidn/libidn11/libidn11-1.26-1.tar.bz2
+2014/10/29 14:42:07 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libk5crypto3/libk5crypto3-1.12.2-1.tar.xz
+2014/10/29 14:42:08 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libkrb5_3/libkrb5_3-1.12.2-1.tar.xz
+2014/10/29 14:42:08 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libkrb5support0/libkrb5support0-1.12.2-1.tar.xz
+2014/10/29 14:42:09 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/openldap/libopenldap2_4_2/libopenldap2_4_2-2.4.35-1.tar.bz2
+2014/10/29 14:42:10 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cyrus-sasl/libsasl2_3/libsasl2_3-2.1.26-8.tar.xz
+2014/10/29 14:42:11 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/sqlite3/libsqlite3_0/libsqlite3_0-3.8.6-1.tar.xz
+2014/10/29 14:42:12 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libssh2/libssh2_1/libssh2_1-1.4.2-1.tar.bz2
+2014/10/29 14:42:12 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libuuid-devel/libuuid-devel-2.24.2-1.tar.xz
+2014/10/29 14:42:14 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/openssh/openssh-6.7p1-1.tar.xz
+2014/10/29 14:42:14 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/perl-Error/perl-Error-0.17019-1.tar.bz2
+2014/10/29 14:42:17 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/python/python-2.7.8-1.tar.xz
+2014/10/29 14:42:19 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/rsync/rsync-3.0.9-1.tar.bz2
+2014/10/29 14:42:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/csih/csih-0.9.7-1.tar.bz2
+2014/10/29 14:42:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cygrunsrv/cygrunsrv-1.61-1.tar.xz
+2014/10/29 14:42:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/diffutils/diffutils-3.3-2.tar.xz
+2014/10/29 14:42:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/git/git-2.1.1-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/e2fsprogs/libcom_err2/libcom_err2-1.42.10-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/curl/libcurl4/libcurl4-7.38.0-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libedit/libedit0/libedit0-20130712-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/expat/libexpat1/libexpat1-2.1.0-3.tar.bz2
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libgssapi_krb5_2/libgssapi_krb5_2-1.12.2-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libidn/libidn11/libidn11-1.26-1.tar.bz2
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libk5crypto3/libk5crypto3-1.12.2-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libkrb5_3/libkrb5_3-1.12.2-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/krb5/libkrb5support0/libkrb5support0-1.12.2-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/openldap/libopenldap2_4_2/libopenldap2_4_2-2.4.35-1.tar.bz2
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/cyrus-sasl/libsasl2_3/libsasl2_3-2.1.26-8.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/sqlite3/libsqlite3_0/libsqlite3_0-3.8.6-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/libssh2/libssh2_1/libssh2_1-1.4.2-1.tar.bz2
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libuuid-devel/libuuid-devel-2.24.2-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/openssh/openssh-6.7p1-1.tar.xz
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/perl-Error/perl-Error-0.17019-1.tar.bz2
+2014/10/29 14:42:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/python/python-2.7.8-1.tar.xz
+2014/10/29 14:42:25 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/rsync/rsync-3.0.9-1.tar.bz2
+2014/10/29 14:42:25 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/postinstall/openssh.sh"
+2014/10/29 14:42:25 Ending cygwin install
+2014/10/30 07:26:52 Starting cygwin install, version 2.852
+2014/10/30 07:26:52 User has NO backup/restore rights
+2014/10/30 07:26:52 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:26:52 Could not open Service control manager
+2014/10/30 07:26:58 source: network install
+2014/10/30 07:27:00 root: C:/tools/cygwin user
+2014/10/30 07:27:07 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:27:10 net: Direct
+2014/10/30 07:27:12 site: http://cygwin.mirror.constant.com/
+2014/10/30 07:38:27 Adding required dependency dash: Selecting already-installed version 0.5.8-3.
+2014/10/30 07:38:27 Adding required dependency gawk: Selecting already-installed version 4.1.1-1.
+2014/10/30 07:38:27 Adding required dependency gzip: Selecting already-installed version 1.6-1.
+2014/10/30 07:38:27 Adding required dependency libargp: Selecting already-installed version 20110921-2.
+2014/10/30 07:38:27 Adding required dependency libatomic1: Selecting already-installed version 4.8.3-3.
+2014/10/30 07:38:27 Adding required dependency libattr1: Selecting already-installed version 2.4.46-1.
+2014/10/30 07:38:27 Adding required dependency libblkid1: Selecting already-installed version 2.24.2-1.
+2014/10/30 07:38:27 Adding required dependency libcloog-isl4: Selecting already-installed version 0.18.0-2.
+2014/10/30 07:38:27 Adding required dependency libcrypt0: Selecting already-installed version 1.1-1.
+2014/10/30 07:38:27 Adding required dependency libdb5.3: Selecting already-installed version 5.3.21-1.
+2014/10/30 07:38:27 Adding required dependency libgdbm4: Selecting already-installed version 1.11-1.
+2014/10/30 07:38:27 Adding required dependency libgmp10: Selecting already-installed version 6.0.0a-1.
+2014/10/30 07:38:27 Adding required dependency libgomp1: Selecting already-installed version 4.8.3-3.
+2014/10/30 07:38:27 Adding required dependency libiconv2: Selecting already-installed version 1.14-1.
+2014/10/30 07:38:27 Adding required dependency libintl8: Selecting already-installed version 0.18.3.2-2.
+2014/10/30 07:38:27 Adding required dependency libisl10: Selecting already-installed version 0.11.1-2.
+2014/10/30 07:38:27 Adding required dependency libmpc3: Selecting already-installed version 1.0.2-1.
+2014/10/30 07:38:27 Adding required dependency libmpfr4: Selecting already-installed version 3.1.2-1.
+2014/10/30 07:38:27 Adding required dependency libncursesw10: Selecting already-installed version 5.9-20140524-1.
+2014/10/30 07:38:27 Adding required dependency libpcre1: Selecting already-installed version 8.35-1.
+2014/10/30 07:38:27 Adding required dependency libquadmath0: Selecting already-installed version 4.8.3-3.
+2014/10/30 07:38:27 Adding required dependency libreadline7: Selecting already-installed version 6.2-1.
+2014/10/30 07:38:27 Adding required dependency libssp0: Selecting already-installed version 4.8.3-3.
+2014/10/30 07:38:27 Adding required dependency libstdc++6: Selecting already-installed version 4.8.3-3.
+2014/10/30 07:38:27 Adding required dependency libuuid1: Selecting already-installed version 2.24.2-1.
+2014/10/30 07:38:27 Adding required dependency perl: Selecting already-installed version 5.14.4-1.
+2014/10/30 07:38:27 Adding required dependency popt: Selecting already-installed version 1.16-1.
+2014/10/30 07:38:27 Adding required dependency rebase: Selecting already-installed version 4.4.1-1.
+2014/10/30 07:38:27 Adding required dependency sed: Selecting already-installed version 4.2.2-3.
+2014/10/30 07:38:27 Adding required dependency terminfo: Selecting already-installed version 5.9-20140524-1.
+2014/10/30 07:38:27 Adding required dependency texinfo: Selecting already-installed version 5.2-2.
+2014/10/30 07:38:27 Adding required dependency tzcode: Selecting already-installed version 2013c-1.
+2014/10/30 07:38:27 Adding required dependency w32api-headers: Selecting already-installed version 3.2.0-1.
+2014/10/30 07:38:27 Adding required dependency w32api-runtime: Selecting already-installed version 3.2.0-1.
+2014/10/30 07:38:27 Adding required dependency zlib0: Selecting already-installed version 1.2.8-1.
+2014/10/30 07:38:28 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_autorebase/_autorebase-000257-1.tar.bz2
+2014/10/30 07:38:29 Running preremove script for  _autorebase
+2014/10/30 07:38:29 Running preremove script for  bzip2
+2014/10/30 07:38:29 Running preremove script for  ca-certificates
+2014/10/30 07:38:29 Running preremove script for  csih
+2014/10/30 07:38:29 Running preremove script for  cygrunsrv
+2014/10/30 07:38:29 Running preremove script for  diffutils
+2014/10/30 07:38:29 Running preremove script for  editrights
+2014/10/30 07:38:29 Running preremove script for  file
+2014/10/30 07:38:29 Running preremove script for  git
+2014/10/30 07:38:29 Running preremove script for  groff
+2014/10/30 07:38:29 Running preremove script for  hostname
+2014/10/30 07:38:29 Running preremove script for  ipc-utils
+2014/10/30 07:38:29 Running preremove script for  less
+2014/10/30 07:38:29 Running preremove script for  libbz2_1
+2014/10/30 07:38:29 Running preremove script for  libcom_err2
+2014/10/30 07:38:29 Running preremove script for  libcurl4
+2014/10/30 07:38:29 Running preremove script for  libedit0
+2014/10/30 07:38:29 Running preremove script for  libexpat1
+2014/10/30 07:38:29 Running preremove script for  libffi6
+2014/10/30 07:38:29 Running preremove script for  libgssapi_krb5_2
+2014/10/30 07:38:29 Running preremove script for  libiconv
+2014/10/30 07:38:29 Running preremove script for  libidn11
+2014/10/30 07:38:29 Running preremove script for  libk5crypto3
+2014/10/30 07:38:29 Running preremove script for  libkrb5_3
+2014/10/30 07:38:29 Running preremove script for  libkrb5support0
+2014/10/30 07:38:29 Running preremove script for  liblzma5
+2014/10/30 07:38:29 Running preremove script for  libopenldap2_4_2
+2014/10/30 07:38:29 Running preremove script for  libopenssl100
+2014/10/30 07:38:29 Running preremove script for  libp11-kit0
+2014/10/30 07:38:29 Running preremove script for  libpipeline1
+2014/10/30 07:38:29 Running preremove script for  libsasl2_3
+2014/10/30 07:38:29 Running preremove script for  libsqlite3_0
+2014/10/30 07:38:29 Running preremove script for  libssh2_1
+2014/10/30 07:38:29 Running preremove script for  libtasn1_6
+2014/10/30 07:38:29 Running preremove script for  libuuid-devel
+2014/10/30 07:38:29 Running preremove script for  login
+2014/10/30 07:38:29 Running preremove script for  lynx
+2014/10/30 07:38:29 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/preremove/lynx.sh"
+2014/10/30 07:38:29 Running preremove script for  man-db
+2014/10/30 07:38:29 running: C:\tools\cygwin\bin\bash.exe --norc --noprofile "/etc/preremove/man-db.sh"
+2014/10/30 07:38:29 Running preremove script for  mintty
+2014/10/30 07:38:29 Running preremove script for  openssh
+2014/10/30 07:38:29 Running preremove script for  p11-kit
+2014/10/30 07:38:29 Running preremove script for  p11-kit-trust
+2014/10/30 07:38:29 Running preremove script for  perl-Error
+2014/10/30 07:38:29 Running preremove script for  python
+2014/10/30 07:38:29 Running preremove script for  tar
+2014/10/30 07:38:29 Running preremove script for  vim-minimal
+2014/10/30 07:38:29 Running preremove script for  which
+2014/10/30 07:38:29 Running preremove script for  windows-default-manifest
+2014/10/30 07:38:29 Running preremove script for  xz
+2014/10/30 07:38:29 Uninstalling _autorebase
+2014/10/30 07:38:29 Uninstalling bzip2
+2014/10/30 07:38:29 Uninstalling ca-certificates
+2014/10/30 07:38:29 Uninstalling csih
+2014/10/30 07:38:29 Uninstalling cygrunsrv
+2014/10/30 07:38:29 Uninstalling diffutils
+2014/10/30 07:38:29 Uninstalling editrights
+2014/10/30 07:38:29 Uninstalling file
+2014/10/30 07:38:29 Uninstalling git
+2014/10/30 07:38:29 Uninstalling groff
+2014/10/30 07:38:30 Uninstalling hostname
+2014/10/30 07:38:30 Uninstalling ipc-utils
+2014/10/30 07:38:30 Uninstalling less
+2014/10/30 07:38:30 Uninstalling libbz2_1
+2014/10/30 07:38:30 Uninstalling libcom_err2
+2014/10/30 07:38:30 Uninstalling libcurl4
+2014/10/30 07:38:30 Uninstalling libedit0
+2014/10/30 07:38:30 Uninstalling libexpat1
+2014/10/30 07:38:30 Uninstalling libffi6
+2014/10/30 07:38:30 Uninstalling libgssapi_krb5_2
+2014/10/30 07:38:30 Uninstalling libiconv
+2014/10/30 07:38:30 Uninstalling libidn11
+2014/10/30 07:38:30 Uninstalling libk5crypto3
+2014/10/30 07:38:30 Uninstalling libkrb5_3
+2014/10/30 07:38:30 Uninstalling libkrb5support0
+2014/10/30 07:38:30 Uninstalling liblzma5
+2014/10/30 07:38:30 Uninstalling libopenldap2_4_2
+2014/10/30 07:38:30 Uninstalling libopenssl100
+2014/10/30 07:38:30 Uninstalling libp11-kit0
+2014/10/30 07:38:30 Uninstalling libpipeline1
+2014/10/30 07:38:30 Uninstalling libsasl2_3
+2014/10/30 07:38:30 Uninstalling libsqlite3_0
+2014/10/30 07:38:30 Uninstalling libssh2_1
+2014/10/30 07:38:30 Uninstalling libtasn1_6
+2014/10/30 07:38:30 Uninstalling libuuid-devel
+2014/10/30 07:38:30 Uninstalling login
+2014/10/30 07:38:30 Uninstalling lynx
+2014/10/30 07:38:30 Uninstalling man-db
+2014/10/30 07:38:30 Uninstalling mintty
+2014/10/30 07:38:30 Uninstalling openssh
+2014/10/30 07:38:30 Uninstalling p11-kit
+2014/10/30 07:38:30 Uninstalling p11-kit-trust
+2014/10/30 07:38:30 Uninstalling perl-Error
+2014/10/30 07:38:30 Uninstalling python
+2014/10/30 07:38:31 Uninstalling tar
+2014/10/30 07:38:31 Uninstalling vim-minimal
+2014/10/30 07:38:31 Uninstalling which
+2014/10/30 07:38:31 Uninstalling windows-default-manifest
+2014/10/30 07:38:31 Uninstalling xz
+2014/10/30 07:38:31 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_autorebase/_autorebase-000257-1.tar.bz2
+2014/10/30 07:38:31 running: cmd.exe /c "C:\tools\cygwin\etc\postinstall\autorebase.bat"
+2014/10/30 07:38:35 note: Installation Complete
+2014/10/30 07:38:35 Ending cygwin install
+2014/10/30 07:38:38 Starting cygwin install, version 2.852
+2014/10/30 07:38:38 User has NO backup/restore rights
+2014/10/30 07:38:38 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:38:38 Could not open Service control manager
+2014/10/30 07:38:42 source: network install
+2014/10/30 07:38:43 root: C:/tools/cygwin user
+2014/10/30 07:38:45 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:38:46 net: Direct
+2014/10/30 07:38:47 site: http://cygwin.mirror.constant.com/
+2014/10/30 07:40:12 Adding required dependency bzip2: Selecting version 1.0.6-2 for installation.
+2014/10/30 07:40:12 Adding required dependency libbz2_1: Selecting version 1.0.6-2 for installation.
+2014/10/30 07:40:12 Adding required dependency liblzma5: Selecting version 5.0.5-1 for installation.
+2014/10/30 07:40:12 Adding required dependency libsmartcols1: Selecting version 2.25.1-1 for installation.
+2014/10/30 07:40:12 Adding required dependency tzcode: Selecting already-installed version 2013c-1.
+2014/10/30 07:40:12 Adding required dependency xz: Selecting version 5.0.5-1 for installation.
+2014/10/30 07:40:12 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_autorebase/_autorebase-000258-1.tar.bz2
+2014/10/30 07:40:14 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/file/file-5.20-1.tar.xz
+2014/10/30 07:40:14 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.25.1-1.tar.xz
+2014/10/30 07:40:15 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libsmartcols1/libsmartcols1-2.25.1-1.tar.xz
+2014/10/30 07:40:15 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.25.1-1.tar.xz
+2014/10/30 07:40:16 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/util-linux-2.25.1-1.tar.xz
+2014/10/30 07:40:17 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/zlib/zlib0/zlib0-1.2.8-2.tar.xz
+2014/10/30 07:40:19 Running preremove script for  _autorebase
+2014/10/30 07:40:19 Running preremove script for  libblkid1
+2014/10/30 07:40:19 Running preremove script for  libuuid1
+2014/10/30 07:40:19 Running preremove script for  util-linux
+2014/10/30 07:40:19 Running preremove script for  zlib0
+2014/10/30 07:40:19 Uninstalling _autorebase
+2014/10/30 07:40:19 Uninstalling libblkid1
+2014/10/30 07:40:19 Uninstalling libuuid1
+2014/10/30 07:40:19 Uninstalling util-linux
+2014/10/30 07:40:19 Uninstalling zlib0
+2014/10/30 07:40:19 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_autorebase/_autorebase-000258-1.tar.bz2
+2014/10/30 07:40:19 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2014/10/30 07:40:19 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/editrights/editrights-1.02-1.tar.bz2
+2014/10/30 07:40:19 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/file/file-5.20-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.25.1-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/xz/liblzma5/liblzma5-5.0.5-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libsmartcols1/libsmartcols1-2.25.1-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.25.1-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/tar/tar-1.27.1-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/util-linux-2.25.1-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.417-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/xz/xz-5.0.5-1.tar.xz
+2014/10/30 07:40:20 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/zlib/zlib0/zlib0-1.2.8-2.tar.xz
+2014/10/30 07:40:20 running: cmd.exe /c "C:\tools\cygwin\etc\postinstall\autorebase.bat"
+2014/10/30 07:42:48 Adding required dependency rebase: Selecting already-installed version 4.4.1-1.
+2014/10/30 07:42:49 Running preremove script for  _autorebase
+2014/10/30 07:42:49 Running preremove script for  bzip2
+2014/10/30 07:42:49 Running preremove script for  editrights
+2014/10/30 07:42:49 Running preremove script for  file
+2014/10/30 07:42:49 Running preremove script for  hostname
+2014/10/30 07:42:49 Running preremove script for  ipc-utils
+2014/10/30 07:42:49 Running preremove script for  libblkid1
+2014/10/30 07:42:49 Running preremove script for  libbz2_1
+2014/10/30 07:42:49 Running preremove script for  liblzma5
+2014/10/30 07:42:49 Running preremove script for  libsmartcols1
+2014/10/30 07:42:49 Running preremove script for  libuuid1
+2014/10/30 07:42:49 Running preremove script for  login
+2014/10/30 07:42:49 Running preremove script for  mintty
+2014/10/30 07:42:49 Running preremove script for  tar
+2014/10/30 07:42:49 Running preremove script for  util-linux
+2014/10/30 07:42:49 Running preremove script for  vim-minimal
+2014/10/30 07:42:49 Running preremove script for  which
+2014/10/30 07:42:49 Running preremove script for  xz
+2014/10/30 07:42:49 Running preremove script for  zlib0
+2014/10/30 07:42:49 Uninstalling _autorebase
+2014/10/30 07:42:49 Uninstalling bzip2
+2014/10/30 07:42:49 Uninstalling editrights
+2014/10/30 07:42:49 Uninstalling file
+2014/10/30 07:42:49 Uninstalling hostname
+2014/10/30 07:42:49 Uninstalling ipc-utils
+2014/10/30 07:42:49 Uninstalling libblkid1
+2014/10/30 07:42:49 Uninstalling libbz2_1
+2014/10/30 07:42:49 Uninstalling liblzma5
+2014/10/30 07:42:49 Uninstalling libsmartcols1
+2014/10/30 07:42:49 Uninstalling libuuid1
+2014/10/30 07:42:49 Uninstalling login
+2014/10/30 07:42:49 Uninstalling mintty
+2014/10/30 07:42:49 Uninstalling tar
+2014/10/30 07:42:49 Uninstalling util-linux
+2014/10/30 07:42:49 Uninstalling vim-minimal
+2014/10/30 07:42:49 Uninstalling which
+2014/10/30 07:42:49 Uninstalling xz
+2014/10/30 07:42:49 Uninstalling zlib0
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/_autorebase/_autorebase-000258-1.tar.bz2
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/editrights/editrights-1.02-1.tar.bz2
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/file/file-5.20-1.tar.xz
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.25.1-1.tar.xz
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/xz/liblzma5/liblzma5-5.0.5-1.tar.xz
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libsmartcols1/libsmartcols1-2.25.1-1.tar.xz
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.25.1-1.tar.xz
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/10/30 07:42:49 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/util-linux/util-linux-2.25.1-1.tar.xz
+2014/10/30 07:42:50 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.417-1.tar.xz
+2014/10/30 07:42:50 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/10/30 07:42:50 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/zlib/zlib0/zlib0-1.2.8-2.tar.xz
+2014/10/30 07:42:50 running: cmd.exe /c "C:\tools\cygwin\etc\postinstall\autorebase.bat"
+2014/10/30 07:42:51 can't run /etc/postinstall/autorebase.bat: No such file
+2014/10/30 07:42:54 note: Installation Complete
+2014/10/30 07:42:54 Ending cygwin install
+2014/10/30 07:43:12 Starting cygwin install, version 2.852
+2014/10/30 07:43:12 User has NO backup/restore rights
+2014/10/30 07:43:12 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:43:12 Could not open Service control manager
+2014/10/30 07:43:15 source: network install
+2014/10/30 07:43:16 root: C:/tools/cygwin user
+2014/10/30 07:43:17 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:43:18 net: Direct
+2014/10/30 07:43:20 site: http://cygwin.mirror.constant.com/
+2014/10/30 07:44:29 Running preremove script for  bzip2
+2014/10/30 07:44:29 Running preremove script for  libbz2_1
+2014/10/30 07:44:29 Uninstalling bzip2
+2014/10/30 07:44:29 Uninstalling libbz2_1
+2014/10/30 07:44:29 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/windows-default-manifest/windows-default-manifest-6.4-1.tar.xz
+2014/10/30 07:44:32 note: Installation Complete
+2014/10/30 07:44:32 Ending cygwin install
+2014/10/30 07:44:58 Starting cygwin install, version 2.852
+2014/10/30 07:44:58 User has NO backup/restore rights
+2014/10/30 07:44:58 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:44:58 Could not open Service control manager
+2014/10/30 07:45:03 source: network install
+2014/10/30 07:45:04 root: C:/tools/cygwin user
+2014/10/30 07:45:05 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:45:06 net: Direct
+2014/10/30 07:45:07 site: http://cygwin.mirror.constant.com/
+2014/10/30 07:46:06 Running preremove script for  windows-default-manifest
+2014/10/30 07:46:06 Uninstalling windows-default-manifest
+2014/10/30 07:46:21 Running preremove script for  which
+2014/10/30 07:46:21 Uninstalling which
+2014/10/30 07:46:38 Running preremove script for  vim-minimal
+2014/10/30 07:46:38 Uninstalling vim-minimal
+2014/10/30 07:46:55 Running preremove script for  rsync
+2014/10/30 07:46:55 Uninstalling rsync
+2014/10/30 07:47:08 Running preremove script for  mintty
+2014/10/30 07:47:08 Uninstalling mintty
+2014/10/30 07:47:25 Running preremove script for  login
+2014/10/30 07:47:25 Uninstalling login
+2014/10/30 07:47:28 note: Uninstalls complete.
+2014/10/30 07:47:28 Ending cygwin install
+2014/10/30 07:48:03 Starting cygwin install, version 2.852
+2014/10/30 07:48:03 User has NO backup/restore rights
+2014/10/30 07:48:03 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:48:03 Could not open Service control manager
+2014/10/30 07:48:08 source: network install
+2014/10/30 07:48:09 root: C:/tools/cygwin user
+2014/10/30 07:48:10 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:48:15 net: Direct
+2014/10/30 07:48:18 site: http://cygwin.mirror.constant.com/
+2014/10/30 07:48:59 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/10/30 07:49:00 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/10/30 07:49:01 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.417-1.tar.xz
+2014/10/30 07:49:01 Downloaded C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/10/30 07:49:02 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/10/30 07:49:02 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/10/30 07:49:02 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.417-1.tar.xz
+2014/10/30 07:49:02 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/10/30 07:49:22 Running preremove script for  login
+2014/10/30 07:49:22 Running preremove script for  mintty
+2014/10/30 07:49:22 Running preremove script for  vim-minimal
+2014/10/30 07:49:22 Running preremove script for  which
+2014/10/30 07:49:22 Uninstalling login
+2014/10/30 07:49:22 Uninstalling mintty
+2014/10/30 07:49:22 Uninstalling vim-minimal
+2014/10/30 07:49:22 Uninstalling which
+2014/10/30 07:49:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/10/30 07:49:22 Extracting from file://C:/tools/cygwin/var/cache/setup/http%3a%2f%2fcygwin.mirror.constant.com%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/10/30 07:51:45 Running preremove script for  alternatives
+2014/10/30 07:51:45 Running preremove script for  login
+2014/10/30 07:51:45 Running preremove script for  mintty
+2014/10/30 07:51:45 Uninstalling alternatives
+2014/10/30 07:51:45 Uninstalling login
+2014/10/30 07:51:45 Uninstalling mintty
+2014/10/30 07:53:39 note: Uninstalls complete.
+2014/10/30 07:53:39 Ending cygwin install
+2014/10/30 07:53:41 Starting cygwin install, version 2.852
+2014/10/30 07:53:41 User has NO backup/restore rights
+2014/10/30 07:53:41 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:53:41 Could not open Service control manager
+2014/10/30 07:53:44 source: network install
+2014/10/30 07:53:44 root: C:/tools/cygwin user
+2014/10/30 07:53:45 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 07:53:45 net: Direct
+2014/10/30 07:53:47 site: http://cygwin.mirror.constant.com/
+2014/10/30 07:55:07 site: http://cygwin.mirror.constant.com/
+2014/10/30 07:56:23 Running preremove script for  util-linux
+2014/10/30 07:56:23 Uninstalling util-linux
+2014/10/30 07:56:53 Running preremove script for  run
+2014/10/30 07:56:53 Uninstalling run
+2014/10/30 07:57:09 Running preremove script for  libsmartcols1
+2014/10/30 07:57:09 Uninstalling libsmartcols1
+2014/10/30 07:57:43 Running preremove script for  liblzma5
+2014/10/30 07:57:43 Uninstalling liblzma5
+2014/10/30 07:58:00 Running preremove script for  libblkid1
+2014/10/30 07:58:00 Uninstalling libblkid1
+2014/10/30 07:58:10 Running preremove script for  libuuid1
+2014/10/30 07:58:10 Uninstalling libuuid1
+2014/10/30 07:58:20 Running preremove script for  ipc-utils
+2014/10/30 07:58:20 Uninstalling ipc-utils
+2014/10/30 07:58:33 Running preremove script for  hostname
+2014/10/30 07:58:33 Uninstalling hostname
+2014/10/30 07:58:45 Running preremove script for  getent
+2014/10/30 07:58:45 Uninstalling getent
+2014/10/30 07:59:00 Running preremove script for  libargp
+2014/10/30 07:59:00 Uninstalling libargp
+2014/10/30 08:02:41 Running preremove script for  file
+2014/10/30 08:02:41 Uninstalling file
+2014/10/30 08:02:57 Running preremove script for  editrights
+2014/10/30 08:02:57 Uninstalling editrights
+2014/10/30 08:03:10 Running preremove script for  cygutils
+2014/10/30 08:03:10 Uninstalling cygutils
+2014/10/30 08:07:06 note: Nothing needed to be installed
+2014/10/30 08:07:06 Ending cygwin install
+2014/10/30 08:08:24 Starting cygwin install, version 2.852
+2014/10/30 08:08:24 User has NO backup/restore rights
+2014/10/30 08:08:24 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 08:08:24 Could not open Service control manager
+2014/10/30 08:08:27 source: network install
+2014/10/30 08:08:29 root: C:/tools/cygwin user
+2014/10/30 08:08:30 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 08:08:30 net: Direct
+2014/10/30 08:08:32 site: http://cygwin.mirror.constant.com/
+2014/10/30 08:09:30 Ending cygwin install

@@ -1,0 +1,17 @@
+2014/10/30 08:08:24 Starting cygwin install, version 2.852
+2014/10/30 08:08:24 User has NO backup/restore rights
+2014/10/30 08:08:24 Current Directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 08:08:24 Could not open Service control manager
+2014/10/30 08:08:27 source: network install
+2014/10/30 08:08:29 root: C:/tools/cygwin user
+2014/10/30 08:08:30 Selected local directory: C:/tools/cygwin/var/cache/setup
+2014/10/30 08:08:30 net: Direct
+Loaded cached mirror list
+get_url_to_membuf http://cygwin.com/mirrors.lst
+getUrlToStream http://cygwin.com/mirrors.lst
+2014/10/30 08:08:32 site: http://cygwin.mirror.constant.com/
+get_url_to_membuf http://cygwin.mirror.constant.com/x86_64/setup.bz2
+getUrlToStream http://cygwin.mirror.constant.com/x86_64/setup.bz2
+get_url_to_membuf http://cygwin.mirror.constant.com/x86_64/setup.bz2.sig
+getUrlToStream http://cygwin.mirror.constant.com/x86_64/setup.bz2.sig
+2014/10/30 08:09:30 Ending cygwin install
