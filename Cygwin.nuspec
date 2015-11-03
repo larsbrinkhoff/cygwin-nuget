@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Cygwin</id>
-    <version>1.7.32</version>
+    <version>2.2.1</version>
     <authors>Lars Brinkhoff</authors>
     <owners>Lars Brinkhoff</owners>
     <licenseUrl>https://cygwin.com/licensing.html</licenseUrl>

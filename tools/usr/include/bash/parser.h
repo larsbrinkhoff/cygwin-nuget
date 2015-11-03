@@ -1,7 +1,7 @@
 /* parser.h -- Everything you wanted to know about the parser, but were
    afraid to ask. */
 
-/* Copyright (C) 1995, 2008,2009 Free Software Foundation, Inc.
+/* Copyright (C) 1995-2010 Free Software Foundation, Inc.
 
    This file is part of GNU Bash, the Bourne Again SHell.
 
@@ -36,7 +36,7 @@
 #define PST_CASESTMT	0x000080	/* parsing a case statement */
 #define PST_CONDCMD	0x000100	/* parsing a [[...]] command */
 #define PST_CONDEXPR	0x000200	/* parsing the guts of [[...]] */
-#define PST_ARITHFOR	0x000400	/* parsing an arithmetic for command */
+#define PST_ARITHFOR	0x000400	/* parsing an arithmetic for command - unused */
 #define PST_ALEXPAND	0x000800	/* OK to expand aliases - unused */
 #define PST_EXTPAT	0x001000	/* parsing an extended shell pattern */
 #define PST_COMPASSIGN	0x002000	/* parsing x=(...) compound assignment */
@@ -45,7 +45,7 @@
 #define PST_REGEXP	0x010000	/* parsing an ERE/BRE as a single word */
 #define PST_HEREDOC	0x020000	/* reading body of here-document */
 #define PST_REPARSE	0x040000	/* re-parsing in parse_string_to_word_list */
-#define PST_REDIRLIST	0x080000	/* parsing a list of redirctions preceding a simple command name */
+#define PST_REDIRLIST	0x080000	/* parsing a list of redirections preceding a simple command name */
 
 
 /* Definition of the delimiter stack.  Needed by parse.y and bashhist.c. */
@@ -60,5 +60,14 @@ struct dstack {
 /* How many slots are allocated to DELIMITERS. */
   int delimiter_space;
 };
+
+/* States we can be in while scanning a ${...} expansion.  Shared between
+   parse.y and subst.c */
+#define DOLBRACE_PARAM	0x01
+#define DOLBRACE_OP	0x02
+#define DOLBRACE_WORD	0x04
+
+#define DOLBRACE_QUOTE	0x40	/* single quote is special in double quotes */
+#define DOLBRACE_QUOTE2	0x80	/* single quote is semi-special in double quotes */
 
 #endif /* _PARSER_H_ */

@@ -1,4 +1,8 @@
 /* Default linker script, for normal executables */
+/* Copyright (C) 2014 Free Software Foundation, Inc.
+   Copying and distribution of this script, with or without modification,
+   are permitted in any medium without royalty provided the copyright
+   notice and this notice are preserved.  */
 OUTPUT_FORMAT(pei-i386)
 SEARCH_DIR("/usr/x86_64-pc-cygwin/lib");
 SECTIONS

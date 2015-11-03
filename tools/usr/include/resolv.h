@@ -50,7 +50,7 @@
 
 /*
  *	@(#)resolv.h	8.1 (Berkeley) 6/2/93
- *	$Id: resolv.h,v 1.4 2011/12/17 23:39:47 cgf Exp $
+ *	$Id$
  */
 
 #ifndef _RESOLV_H_

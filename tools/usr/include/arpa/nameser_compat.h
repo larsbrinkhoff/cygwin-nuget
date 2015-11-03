@@ -32,7 +32,7 @@
 
 /*
  *      from nameser.h	8.1 (Berkeley) 6/2/93
- *	$Id: nameser_compat.h,v 1.3 2011/12/17 23:39:47 cgf Exp $
+ *	$Id$
  */
 
 #ifndef _ARPA_NAMESER_COMPAT_

@@ -1,7 +1,7 @@
 /* version.h -- Cygwin version numbers and accompanying documentation.
 
    Copyright 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
-   2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014 Red Hat, Inc.
+   2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015 Red Hat, Inc.
 
 This file is part of Cygwin.
 
@@ -42,8 +42,8 @@ details. */
 	 the Cygwin shared library".  This version is used to track important
 	 changes to the DLL and is mainly informative in nature. */
 
-#define CYGWIN_VERSION_DLL_MAJOR 1007
-#define CYGWIN_VERSION_DLL_MINOR 32
+#define CYGWIN_VERSION_DLL_MAJOR 2002
+#define CYGWIN_VERSION_DLL_MINOR 1
 
       /* Major numbers before CYGWIN_VERSION_DLL_EPOCH are
 	 incompatible. */
@@ -448,12 +448,36 @@ details. */
       272: Export tm_gmtoff and tm_zone members.
       273: Skipped.
       274: Export __cxa_atexit and __cxa_finalize.
+      275: Introduce account mapping from Windows account DBs.  Add CW_SETENT,
+	   CW_GETENT, CW_ENDENT, CW_GETNSSSEP, CW_GETPWSID, CW_GETGRSID,
+	   CW_CYGNAME_FROM_WINNAME.
+      276: Export ffsl, ffsll.
+      277: Add setsockopt(SO_PEERCRED).
+      278: Add quotactl.
+      279: Export stime.
+      280: Static atexit in libcygwin.a, CW_FIXED_ATEXIT.
+      281: Add CW_GETNSS_PWD_SRC, CW_GETNSS_GRP_SRC.
+      282: Export __bsd_qsort_r, qsort_r.
+      283: Export __fbufsize, __flbf, __fpending, __freadable, __freading,
+           __fsetlocking, __fwritable, __fwriting. clearerr_unlocked,
+           feof_unlocked, ferror_unlocked, fflush_unlocked, fgetc_unlocked,
+           fgets_unlocked, fgetwc_unlocked, fgetws_unlocked, fileno_unlocked,
+           fputc_unlocked, fputs_unlocked, fputwc_unlocked, fputws_unlocked,
+           fread_unlocked, fwrite_unlocked, getwc_unlocked, getwchar_unlocked,
+           putwc_unlocked, putwchar_unlocked.
+      284: Export sockatmark.
+      285: Export wcstold.
+      286: Export cabsl, cimagl, creall, finitel, hypotl, sqrtl.
+      287: Export issetugid.
+      288: Export getcontext, makecontext, setcontext, swapcontext.
+      289: Export sigsetjmp, siglongjmp.
      */
 
-     /* Note that we forgot to bump the api for ualarm, strtoll, strtoull */
+     /* Note that we forgot to bump the api for ualarm, strtoll, strtoull,
+	sigaltstack, sethostname. */
 
 #define CYGWIN_VERSION_API_MAJOR 0
-#define CYGWIN_VERSION_API_MINOR 274
+#define CYGWIN_VERSION_API_MINOR 289
 
      /* There is also a compatibity version number associated with the
 	shared memory regions.  It is incremented when incompatible
@@ -487,7 +511,6 @@ details. */
      /* Identifiers used in the Win32 registry. */
 
 #define CYGWIN_INFO_CYGWIN_REGISTRY_NAME "Cygwin"
-#define CYGWIN_INFO_PROGRAM_OPTIONS_NAME "Program Options"
 #define CYGWIN_INFO_INSTALLATIONS_NAME   "Installations"
 
      /* The default cygdrive prefix. */

@@ -1,23 +1,37 @@
-/* libgen.h
+/*
+ * libgen.h - defined by XPG4
+ */
 
-   Copyright 2005 Red Hat, Inc.
+#ifndef _LIBGEN_H_
+#define _LIBGEN_H_
 
-This file is part of Cygwin.
-
-This software is a copyrighted work licensed under the terms of the
-Cygwin license.  Please consult the file "CYGWIN_LICENSE" for
-details. */
-
-#ifndef _LIBGEN_H
-#define _LIBGEN_H
-
+#include "_ansi.h"
 #include <sys/cdefs.h>
+#include <sys/reent.h>
 
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-extern char *basename (char *path);
-extern char *dirname (char *path);
+/* There are two common basename variants.  If you do NOT #include <libgen.h>
+   and you do
 
-__END_DECLS
+     #define _GNU_SOURCE
+     #include <string.h>
 
-#endif /* _LIBGEN_H */
+   you get the GNU version.  Otherwise you get the POSIX versionfor which you
+   should #include <libgen.h>i for the function prototype.  POSIX requires that
+   #undef basename will still let you invoke the underlying function.  However,
+   this also implies that the POSIX version is used in this case.  That's made
+   sure here. */
+#undef basename
+#define basename __xpg_basename
+char      *_EXFUN(basename,     (char *)) __asm__(__ASMNAME("basename"));
+char      *_EXFUN(dirname,     (char *));
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* _LIBGEN_H_ */
+

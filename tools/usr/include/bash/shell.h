@@ -55,6 +55,8 @@ extern int EOF_Reached;
 /* Usage messages by builtins result in a return status of 2. */
 #define EX_BADUSAGE	2
 
+#define EX_MISCERROR	2
+
 /* Special exit statuses used by the shell, internally and externally. */
 #define EX_RETRYFAIL	124
 #define EX_WEXPCOMSUB	125
@@ -93,6 +95,8 @@ extern int interactive, interactive_shell;
 extern int startup_state;
 extern int subshell_environment;
 extern int shell_compatibility_level;
+
+extern int locale_mb_cur_max;
 
 /* Structure to pass around that holds a bitmap of file descriptors
    to close, and the size of that structure.  Used in execute_cmd.c. */
@@ -134,6 +138,9 @@ typedef struct _sh_parser_state_t {
   int parser_state;
   int *token_state;
 
+  char *token;
+  int token_buffer_size;
+
   /* input line state -- line number saved elsewhere */
   int input_line_terminator;
   int eof_encountered;
@@ -141,6 +148,8 @@ typedef struct _sh_parser_state_t {
 #if defined (HANDLE_MULTIBYTE)
   /* Nothing right now for multibyte state, but might want something later. */
 #endif
+
+  char **prompt_string_pointer;
 
   /* history state affecting or modified by the parser */
   int current_command_line_count;
@@ -159,11 +168,22 @@ typedef struct _sh_parser_state_t {
   /* flags state affecting the parser */
   int expand_aliases;
   int echo_input_at_read;
-  
+  int need_here_doc;
+
 } sh_parser_state_t;
+
+typedef struct _sh_input_line_state_t {
+  char *input_line;
+  size_t input_line_index;
+  size_t input_line_size;
+  size_t input_line_len;
+} sh_input_line_state_t;
 
 /* Let's try declaring these here. */
 extern char *parser_remaining_input __P((void));
 
 extern sh_parser_state_t *save_parser_state __P((sh_parser_state_t *));
 extern void restore_parser_state __P((sh_parser_state_t *));
+
+extern sh_input_line_state_t *save_input_line_state __P((sh_input_line_state_t *));
+extern void restore_input_line_state __P((sh_input_line_state_t *));

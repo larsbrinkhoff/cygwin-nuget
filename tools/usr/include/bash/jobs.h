@@ -156,6 +156,8 @@ struct bgpids {
 /* A value which cannot be a process ID. */
 #define NO_PID (pid_t)-1
 
+#define ANY_PID (pid_t)-1
+
 /* System calls. */
 #if !defined (HAVE_UNISTD_H)
 extern pid_t fork (), getpid (), getpgrp ();
@@ -165,7 +167,7 @@ extern pid_t fork (), getpid (), getpgrp ();
 extern struct jobstats js;
 
 extern pid_t original_pgrp, shell_pgrp, pipeline_pgrp;
-extern pid_t last_made_pid, last_asynchronous_pid;
+extern volatile pid_t last_made_pid, last_asynchronous_pid;
 extern int asynchronous_notification;
 
 extern JOB **jobs;
@@ -177,6 +179,7 @@ extern void save_pipeline __P((int));
 extern void restore_pipeline __P((int));
 extern void start_pipeline __P((void));
 extern int stop_pipeline __P((int, COMMAND *));
+extern void append_process __P((char *, pid_t, int, int));
 
 extern void delete_job __P((int, int));
 extern void nohup_job __P((int));
@@ -208,10 +211,14 @@ extern pid_t make_child __P((char *, int));
 extern int get_tty_state __P((void));
 extern int set_tty_state __P((void));
 
+extern int job_exit_status __P((int));
+extern int job_exit_signal __P((int));
+
 extern int wait_for_single_pid __P((pid_t));
 extern void wait_for_background_pids __P((void));
 extern int wait_for __P((pid_t));
 extern int wait_for_job __P((int));
+extern int wait_for_any_job __P((void));
 
 extern void notify_and_cleanup __P((void));
 extern void reap_dead_jobs __P((void));
@@ -223,6 +230,7 @@ extern int give_terminal_to __P((pid_t, int));
 
 extern void run_sigchld_trap __P((int));
 
+extern void freeze_jobs_list __P((void));
 extern void unfreeze_jobs_list __P((void));
 extern int set_job_control __P((int));
 extern void without_job_control __P((void));
@@ -238,8 +246,8 @@ extern void close_pgrp_pipe __P((void));
 extern void save_pgrp_pipe __P((int *, int));
 extern void restore_pgrp_pipe __P((int *));
 
-#if defined (JOB_CONTROL)
-extern int job_control;
-#endif
+extern void set_maxchild __P((int));
+
+extern int job_control;		/* set to 0 in nojobs.c */
 
 #endif /* _JOBS_H_ */

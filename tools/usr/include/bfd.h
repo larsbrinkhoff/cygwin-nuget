@@ -78,7 +78,7 @@ extern "C" {
 #define LITSTRCPY(DEST,STR2) memcpy ((DEST), (STR2), sizeof (STR2))
 
 
-#define BFD_SUPPORTS_PLUGINS 0
+#define BFD_SUPPORTS_PLUGINS 1
 
 /* The word size used by BFD on the host.  This may be 64 with a 32
    bit target if the host is 64 bit, or if other 64 bit targets have
@@ -665,7 +665,7 @@ extern int bfd_elf_get_dyn_lib_class
   (bfd *);
 extern struct bfd_link_needed_list *bfd_elf_get_runpath_list
   (bfd *, struct bfd_link_info *);
-extern bfd_boolean bfd_elf_discard_info
+extern int bfd_elf_discard_info
   (bfd *, struct bfd_link_info *);
 extern unsigned int _bfd_elf_default_action_discarded
   (struct bfd_section *);
@@ -944,10 +944,10 @@ extern void bfd_elf32_aarch64_init_maps
   (bfd *);
 
 extern void bfd_elf64_aarch64_set_options
-  (bfd *, struct bfd_link_info *, int, int, int);
+  (bfd *, struct bfd_link_info *, int, int, int, int);
 
 extern void bfd_elf32_aarch64_set_options
-  (bfd *, struct bfd_link_info *, int, int, int);
+  (bfd *, struct bfd_link_info *, int, int, int, int);
 
 /* ELF AArch64 mapping symbol support.  */
 #define BFD_AARCH64_SPECIAL_SYM_TYPE_MAP	(1 << 0)
@@ -1022,6 +1022,7 @@ extern struct coff_comdat_info * bfd_coff_get_comdat_section
 void bfd_init (void);
 
 /* Extracted from opncls.c.  */
+/* Set to N to open the next N BFDs using an alternate id space.  */
 extern unsigned int bfd_use_reserved_id;
 bfd *bfd_fopen (const char *filename, const char *target,
     const char *mode, int fd);
@@ -1206,6 +1207,7 @@ void *bfd_mmap (bfd *abfd, void *addr, bfd_size_type len,
 
 /* Extracted from bfdwin.c.  */
 /* Extracted from section.c.  */
+
 typedef struct bfd_section
 {
   /* The name of the section; the name isn't a copy, the pointer is
@@ -1969,10 +1971,12 @@ enum bfd_architecture
 #define bfd_mach_mipsisa32r2           33
 #define bfd_mach_mipsisa32r3           34
 #define bfd_mach_mipsisa32r5           36
+#define bfd_mach_mipsisa32r6           37
 #define bfd_mach_mipsisa64             64
 #define bfd_mach_mipsisa64r2           65
 #define bfd_mach_mipsisa64r3           66
 #define bfd_mach_mipsisa64r5           68
+#define bfd_mach_mipsisa64r6           69
 #define bfd_mach_mips_micromips        96
   bfd_arch_i386,      /* Intel 386 */
 #define bfd_mach_i386_intel_syntax     (1 << 0)
@@ -2344,6 +2348,7 @@ unsigned int bfd_arch_mach_octets_per_byte
    (enum bfd_architecture arch, unsigned long machine);
 
 /* Extracted from reloc.c.  */
+
 typedef enum bfd_reloc_status
 {
   /* No errors detected.  */
@@ -2393,6 +2398,7 @@ typedef struct reloc_cache_entry
 }
 arelent;
 
+
 enum complain_overflow
 {
   /* Do not complain on overflow.  */
@@ -2411,6 +2417,7 @@ enum complain_overflow
      unsigned number.  */
   complain_overflow_unsigned
 };
+struct bfd_symbol;             /* Forward declaration.  */
 
 struct reloc_howto_struct
 {
@@ -2937,6 +2944,12 @@ to compensate for the borrow when the low bits are added.  */
   BFD_RELOC_MICROMIPS_7_PCREL_S1,
   BFD_RELOC_MICROMIPS_10_PCREL_S1,
   BFD_RELOC_MICROMIPS_16_PCREL_S1,
+
+/* MIPS PC-relative relocations.  */
+  BFD_RELOC_MIPS_21_PCREL_S2,
+  BFD_RELOC_MIPS_26_PCREL_S2,
+  BFD_RELOC_MIPS_18_PCREL_S3,
+  BFD_RELOC_MIPS_19_PCREL_S2,
 
 /* microMIPS versions of generic BFD relocs.  */
   BFD_RELOC_MICROMIPS_GPREL16,
@@ -3943,6 +3956,13 @@ and shift left by 0 for use in lbi.gp, sbi.gp...  */
   BFD_RELOC_NDS32_15_FIXED,
   BFD_RELOC_NDS32_17_FIXED,
   BFD_RELOC_NDS32_25_FIXED,
+  BFD_RELOC_NDS32_LONGCALL4,
+  BFD_RELOC_NDS32_LONGCALL5,
+  BFD_RELOC_NDS32_LONGCALL6,
+  BFD_RELOC_NDS32_LONGJUMP4,
+  BFD_RELOC_NDS32_LONGJUMP5,
+  BFD_RELOC_NDS32_LONGJUMP6,
+  BFD_RELOC_NDS32_LONGJUMP7,
 
 /* for PIC  */
   BFD_RELOC_NDS32_PLTREL_HI20,
@@ -4003,11 +4023,31 @@ This is a 5 bit absolute address.  */
   BFD_RELOC_NDS32_DIFF16,
   BFD_RELOC_NDS32_DIFF32,
   BFD_RELOC_NDS32_DIFF_ULEB128,
+  BFD_RELOC_NDS32_EMPTY,
+
+/* This is a 25 bit absolute address.  */
   BFD_RELOC_NDS32_25_ABS,
+
+/* For ex9 and ifc using.  */
   BFD_RELOC_NDS32_DATA,
   BFD_RELOC_NDS32_TRAN,
   BFD_RELOC_NDS32_17IFC_PCREL,
   BFD_RELOC_NDS32_10IFCU_PCREL,
+
+/* For TLS.  */
+  BFD_RELOC_NDS32_TPOFF,
+  BFD_RELOC_NDS32_TLS_LE_HI20,
+  BFD_RELOC_NDS32_TLS_LE_LO12,
+  BFD_RELOC_NDS32_TLS_LE_ADD,
+  BFD_RELOC_NDS32_TLS_LE_LS,
+  BFD_RELOC_NDS32_GOTTPOFF,
+  BFD_RELOC_NDS32_TLS_IE_HI20,
+  BFD_RELOC_NDS32_TLS_IE_LO12S2,
+  BFD_RELOC_NDS32_TLS_TPOFF,
+  BFD_RELOC_NDS32_TLS_LE_20,
+  BFD_RELOC_NDS32_TLS_LE_15S0,
+  BFD_RELOC_NDS32_TLS_LE_15S1,
+  BFD_RELOC_NDS32_TLS_LE_15S2,
 
 /* This is a 9-bit reloc  */
   BFD_RELOC_V850_9_PCREL,
@@ -4479,6 +4519,14 @@ value.  */
 /* This is a 7 bit reloc for the AVR that stores SRAM address for 16bit
 lds and sts instructions supported only tiny core.  */
   BFD_RELOC_AVR_LDS_STS_16,
+
+/* This is a 6 bit reloc for the AVR that stores an I/O register
+number for the IN and OUT instructions  */
+  BFD_RELOC_AVR_PORT6,
+
+/* This is a 5 bit reloc for the AVR that stores an I/O register
+number for the SBIC, SBIS, SBI and CBI instructions  */
+  BFD_RELOC_AVR_PORT5,
 
 /* Renesas RL78 Relocations.  */
   BFD_RELOC_RL78_NEG8,
@@ -6019,6 +6067,7 @@ assembler and not (currently) written to any object files.  */
 /* Adapteva EPIPHANY - 8 bit immediate for 16 bit mov instruction.  */
   BFD_RELOC_EPIPHANY_IMM8,
   BFD_RELOC_UNUSED };
+
 typedef enum bfd_reloc_code_real bfd_reloc_code_real_type;
 reloc_howto_type *bfd_reloc_type_lookup
    (bfd *abfd, bfd_reloc_code_real_type code);
@@ -6216,6 +6265,7 @@ bfd_boolean bfd_copy_private_symbol_data
             (ibfd, isymbol, obfd, osymbol))
 
 /* Extracted from bfd.c.  */
+
 enum bfd_direction
   {
     no_direction = 0,
@@ -6500,6 +6550,7 @@ bfd_set_cacheable (bfd * abfd, bfd_boolean val)
   return TRUE;
 }
 
+
 typedef enum bfd_error
 {
   bfd_error_no_error = 0,
@@ -6535,6 +6586,7 @@ const char *bfd_errmsg (bfd_error_type error_tag);
 
 void bfd_perror (const char *message);
 
+
 typedef void (*bfd_error_handler_type) (const char *, ...);
 
 bfd_error_handler_type bfd_set_error_handler (bfd_error_handler_type);
@@ -6542,6 +6594,7 @@ bfd_error_handler_type bfd_set_error_handler (bfd_error_handler_type);
 void bfd_set_error_program_name (const char *);
 
 bfd_error_handler_type bfd_get_error_handler (void);
+
 
 typedef void (*bfd_assert_handler_type) (const char *bfd_formatmsg,
                                          const char *bfd_version,
@@ -6598,12 +6651,12 @@ bfd_boolean bfd_set_private_flags (bfd *abfd, flagword flags);
 
 #define bfd_find_nearest_line(abfd, sec, syms, off, file, func, line) \
        BFD_SEND (abfd, _bfd_find_nearest_line, \
-                 (abfd, sec, syms, off, file, func, line))
+                 (abfd, syms, sec, off, file, func, line, NULL))
 
 #define bfd_find_nearest_line_discriminator(abfd, sec, syms, off, file, func, \
                                             line, disc) \
-       BFD_SEND (abfd, _bfd_find_nearest_line_discriminator, \
-                 (abfd, sec, syms, off, file, func, line, disc))
+       BFD_SEND (abfd, _bfd_find_nearest_line, \
+                 (abfd, syms, sec, off, file, func, line, disc))
 
 #define bfd_find_line(abfd, syms, sym, file, line) \
        BFD_SEND (abfd, _bfd_find_line, \
@@ -6965,8 +7018,7 @@ typedef struct bfd_target
   NAME##_bfd_is_target_special_symbol, \
   NAME##_get_lineno, \
   NAME##_find_nearest_line, \
-  _bfd_generic_find_nearest_line_discriminator, \
-  _bfd_generic_find_line, \
+  NAME##_find_line, \
   NAME##_find_inliner_info, \
   NAME##_bfd_make_debug_symbol, \
   NAME##_read_minisymbols, \
@@ -6987,10 +7039,7 @@ typedef struct bfd_target
   bfd_boolean (*_bfd_is_target_special_symbol) (bfd *, asymbol *);
   alent *     (*_get_lineno) (bfd *, struct bfd_symbol *);
   bfd_boolean (*_bfd_find_nearest_line)
-    (bfd *, struct bfd_section *, struct bfd_symbol **, bfd_vma,
-     const char **, const char **, unsigned int *);
-  bfd_boolean (*_bfd_find_nearest_line_discriminator)
-    (bfd *, struct bfd_section *, struct bfd_symbol **, bfd_vma,
+    (bfd *, struct bfd_symbol **, struct bfd_section *, bfd_vma,
      const char **, const char **, unsigned int *, unsigned int *);
   bfd_boolean (*_bfd_find_line)
     (bfd *, struct bfd_symbol **, struct bfd_symbol *,
@@ -7076,7 +7125,8 @@ typedef struct bfd_target
   /* Indicate that we are only retrieving symbol values from this section.  */
   void        (*_bfd_link_just_syms) (asection *, struct bfd_link_info *);
 
-  /* Copy the symbol type of a linker hash table entry.  */
+  /* Copy the symbol type and other attributes for a linker script
+     assignment of one symbol to another.  */
 #define bfd_copy_link_hash_symbol_type(b, t, f) \
   BFD_SEND (b, _bfd_copy_link_hash_symbol_type, (b, t, f))
   void (*_bfd_copy_link_hash_symbol_type)

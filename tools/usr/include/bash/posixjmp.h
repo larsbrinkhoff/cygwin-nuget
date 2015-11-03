@@ -27,14 +27,16 @@
 
 #if defined (HAVE_POSIX_SIGSETJMP)
 #  define procenv_t	sigjmp_buf
-#  if !defined (__OPENNT)
+#  if !defined (__OPENNT) && !defined __CYGWIN__
 #    undef setjmp
 #    define setjmp(x)	sigsetjmp((x), 1)
 #    undef longjmp
 #    define longjmp(x, n)	siglongjmp((x), (n))
 #  endif /* !__OPENNT */
+#  define setjmp_nosigs(x)	sigsetjmp((x), 0)
 #else
 #  define procenv_t	jmp_buf
+#  define setjmp_nosigs	setjmp
 #endif
 
 #endif /* _POSIXJMP_H_ */

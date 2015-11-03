@@ -29,9 +29,9 @@
 MACHINE="x86_64"
 OS="cygwin"
 CC="gcc"
-CFLAGS=" -DPROGRAM='bash.exe' -DCONF_HOSTTYPE='x86_64' -DCONF_OSTYPE='cygwin' -DCONF_MACHTYPE='x86_64-unknown-cygwin' -DCONF_VENDOR='unknown' -DLOCALEDIR='/usr/share/locale' -DPACKAGE='bash' -DSHELL -DHAVE_CONFIG_H -DRECYCLES_PIDS   -I.  -I/usr/src/bash-4.1.17-9.x86_64/src/bash-4.1 -I/usr/src/bash-4.1.17-9.x86_64/src/bash-4.1/include -I/usr/src/bash-4.1.17-9.x86_64/src/bash-4.1/lib  -DWORDEXP_OPTION -ggdb -O2 -pipe -Wimplicit-function-declaration -fdebug-prefix-map=/usr/src/bash-4.1.17-9.x86_64/build=/usr/src/debug/bash-4.1.17-9 -fdebug-prefix-map=/usr/src/bash-4.1.17-9.x86_64/src/bash-4.1=/usr/src/debug/bash-4.1.17-9"
-RELEASE="4.1"
-PATCHLEVEL="17"
+CFLAGS=" -DPROGRAM='bash.exe' -DCONF_HOSTTYPE='x86_64' -DCONF_OSTYPE='cygwin' -DCONF_MACHTYPE='x86_64-unknown-cygwin' -DCONF_VENDOR='unknown' -DLOCALEDIR='/usr/share/locale' -DPACKAGE='bash' -DSHELL -DHAVE_CONFIG_H -DRECYCLES_PIDS   -I.  -I/usr/src/bash-4.3.42-4.x86_64/src/bash-4.3 -I/usr/src/bash-4.3.42-4.x86_64/src/bash-4.3/include -I/usr/src/bash-4.3.42-4.x86_64/src/bash-4.3/lib  -DWORDEXP_OPTION -ggdb -O2 -pipe -Wimplicit-function-declaration -fdebug-prefix-map=/usr/src/bash-4.3.42-4.x86_64/build=/usr/src/debug/bash-4.3.42-4 -fdebug-prefix-map=/usr/src/bash-4.3.42-4.x86_64/src/bash-4.3=/usr/src/debug/bash-4.3.42-4"
+RELEASE="4.3"
+PATCHLEVEL="42"
 RELSTATUS="release"
 MACHTYPE="x86_64-unknown-cygwin"
 

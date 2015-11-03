@@ -35,11 +35,12 @@
    eliminate the && through constant folding."
    Solaris defines some of these symbols so we must undefine them first.  */
 
-#if defined STDC_HEADERS || (!defined isascii && !defined HAVE_ISASCII)
+#if STDC_HEADERS || (!defined (isascii) && !HAVE_ISASCII)
 #  define IN_CTYPE_DOMAIN(c) 1
 #else
 #  define IN_CTYPE_DOMAIN(c) isascii(c)
 #endif
+#define to_uchar(c) ((unsigned char)(c))
 
 #if !defined (isspace) && !defined (HAVE_ISSPACE)
 #  define isspace(c) ((c) == ' ' || (c) == '\t' || (c) == '\n' || (c) == '\f')
@@ -67,16 +68,16 @@
 
 #undef ISPRINT
 
-#define ISPRINT(c) (IN_CTYPE_DOMAIN (c) && isprint (c))
-#define ISDIGIT(c) (IN_CTYPE_DOMAIN (c) && isdigit (c))
-#define ISALNUM(c) (IN_CTYPE_DOMAIN (c) && isalnum (c))
-#define ISALPHA(c) (IN_CTYPE_DOMAIN (c) && isalpha (c))
-#define ISCNTRL(c) (IN_CTYPE_DOMAIN (c) && iscntrl (c))
-#define ISLOWER(c) (IN_CTYPE_DOMAIN (c) && islower (c))
-#define ISPUNCT(c) (IN_CTYPE_DOMAIN (c) && ispunct (c))
-#define ISSPACE(c) (IN_CTYPE_DOMAIN (c) && isspace (c))
-#define ISUPPER(c) (IN_CTYPE_DOMAIN (c) && isupper (c))
-#define ISXDIGIT(c) (IN_CTYPE_DOMAIN (c) && isxdigit (c))
+#define ISPRINT(c) (IN_CTYPE_DOMAIN (c) && isprint (to_uchar (c)))
+#define ISDIGIT(c) (IN_CTYPE_DOMAIN (c) && isdigit (to_uchar (c)))
+#define ISALNUM(c) (IN_CTYPE_DOMAIN (c) && isalnum (to_uchar (c)))
+#define ISALPHA(c) (IN_CTYPE_DOMAIN (c) && isalpha (to_uchar (c)))
+#define ISCNTRL(c) (IN_CTYPE_DOMAIN (c) && iscntrl (to_uchar (c)))
+#define ISLOWER(c) (IN_CTYPE_DOMAIN (c) && islower (to_uchar (c)))
+#define ISPUNCT(c) (IN_CTYPE_DOMAIN (c) && ispunct (to_uchar (c)))
+#define ISSPACE(c) (IN_CTYPE_DOMAIN (c) && isspace (to_uchar (c)))
+#define ISUPPER(c) (IN_CTYPE_DOMAIN (c) && isupper (to_uchar (c)))
+#define ISXDIGIT(c) (IN_CTYPE_DOMAIN (c) && isxdigit (to_uchar (c)))
 
 #define ISLETTER(c)	(ISALPHA(c))
 
@@ -107,7 +108,7 @@
 #endif
 #ifndef UNCTRL
    /* control char to letter -- ASCII */
-#  define UNCTRL(x)	(TOUPPER((x) | 0x40))
+#  define UNCTRL(x)	(TOUPPER(x) ^ 0x40)
 #endif
 
 #endif /* _SH_CHARTYPES_H */

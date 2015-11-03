@@ -1,6 +1,6 @@
 /* common.h -- extern declarations for functions defined in common.c. */
 
-/* Copyright (C) 1993-2004 Free Software Foundation, Inc.
+/* Copyright (C) 1993-2010 Free Software Foundation, Inc.
 
    This file is part of GNU Bash, the Bourne Again SHell.
 
@@ -33,10 +33,10 @@
 #define SEVAL_RESETLINE	0x010
 #define SEVAL_PARSEONLY	0x020
 #define SEVAL_NOLONGJMP 0x040
-
-/* Flags for describe_command, shared between type.def and command.def */
 #define SEVAL_FUNCDEF	0x080		/* only allow function definitions */
 #define SEVAL_ONECMD	0x100		/* only allow a single command */
+
+/* Flags for describe_command, shared between type.def and command.def */
 #define CDESC_ALL		0x001	/* type -a */
 #define CDESC_SHORTDESC		0x002	/* command -V */
 #define CDESC_REUSABLE		0x004	/* command -v */
@@ -122,6 +122,10 @@ extern void bash_logout __P((void));
 /* Functions from getopts.def */
 extern void getopts_reset __P((int));
 
+/* Functions from read.def */
+extern void read_tty_cleanup __P((void));
+extern int read_tty_modified __P((void));
+
 /* Functions from set.def */
 extern int minus_o_option_value __P((char *));
 extern void list_minus_o_opts __P((int, int));
@@ -147,6 +151,8 @@ extern void set_bashopts __P((void));
 extern void parse_bashopts __P((char *));
 extern void initialize_bashopts __P((int));
 
+extern void set_compatibility_opts __P((void));
+
 /* Functions from type.def */
 extern int describe_command __P((char *, int));
 
@@ -155,6 +161,7 @@ extern int set_or_show_attributes __P((WORD_LIST *, int, int));
 extern int show_all_var_attributes __P((int, int));
 extern int show_var_attributes __P((SHELL_VAR *, int, int));
 extern int show_name_attributes __P((char *, int));
+extern int show_func_attributes __P((char *, int));
 extern void set_var_attribute __P((char *, int, int));
 
 /* Functions from pushd.def */
@@ -165,6 +172,7 @@ extern WORD_LIST *get_directory_stack __P((int));
 
 /* Functions from evalstring.c */
 extern int parse_and_execute __P((char *, const char *, int));
+extern int evalstring __P((char *, const char *, int));
 extern void parse_and_execute_cleanup __P((void));
 extern int parse_string __P((char *, const char *, int, char **));
 

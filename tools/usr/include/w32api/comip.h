@@ -23,7 +23,11 @@
 class _com_error;
 
 #ifndef WINAPI
+#if defined(_ARM_)
+#define WINAPI
+#else
 #define WINAPI __stdcall
+#endif
 #endif
 
 void WINAPI _com_issue_error(HRESULT);
@@ -62,9 +66,9 @@ public:
     HRESULT hr = _QueryInterface(p);
     if(FAILED(hr) && (hr!=E_NOINTERFACE)) { _com_issue_error(hr); }
   }
-  template<typename _X> _com_ptr_t(LPSTR str) { new(this) _com_ptr_t(static_cast<LPCSTR> (str),NULL); }
-  template<typename _X> _com_ptr_t(LPWSTR str) { new(this) _com_ptr_t(static_cast<LPCWSTR> (str),NULL); }
-  template<typename _X> explicit _com_ptr_t(_com_ptr_t *p) : m_pInterface(NULL) {
+  _com_ptr_t(LPSTR str) { new(this) _com_ptr_t(static_cast<LPCSTR> (str),NULL); }
+  _com_ptr_t(LPWSTR str) { new(this) _com_ptr_t(static_cast<LPCWSTR> (str),NULL); }
+  explicit _com_ptr_t(_com_ptr_t *p) : m_pInterface(NULL) {
     if(!p) { _com_issue_error(E_POINTER); }
     else {
       m_pInterface = p->m_pInterface;
@@ -81,7 +85,7 @@ public:
 #endif
 
   _com_ptr_t(const _com_ptr_t &cp) throw() : m_pInterface(cp.m_pInterface) { _AddRef(); }
-  template<typename _X> _com_ptr_t(Interface *pInterface) throw() : m_pInterface(pInterface) { _AddRef(); }
+  _com_ptr_t(Interface *pInterface) throw() : m_pInterface(pInterface) { _AddRef(); }
   _com_ptr_t(Interface *pInterface,bool fAddRef) throw() : m_pInterface(pInterface) {
     if(fAddRef) _AddRef();
   }
@@ -111,7 +115,7 @@ public:
     if(FAILED(hr) && (hr!=E_NOINTERFACE)) { _com_issue_error(hr); }
     return *this;
   }
-  template<typename _X> _com_ptr_t &operator=(Interface *pInterface) throw() {
+  _com_ptr_t &operator=(Interface *pInterface) throw() {
     if(m_pInterface!=pInterface) {
       Interface *pOldInterface = m_pInterface;
       m_pInterface = pInterface;
@@ -122,6 +126,10 @@ public:
   }
   _com_ptr_t &operator=(const _com_ptr_t &cp) throw() { return operator=(cp.m_pInterface); }
   _com_ptr_t &operator=(int null) {
+    if(null!=0) { _com_issue_error(E_POINTER); }
+    return operator=(reinterpret_cast<Interface*>(NULL));
+  }
+  _com_ptr_t &operator=(long long null) {
     if(null!=0) { _com_issue_error(E_POINTER); }
     return operator=(reinterpret_cast<Interface*>(NULL));
   }
@@ -170,9 +178,9 @@ public:
   template<typename _OtherIID> bool operator==(const _com_ptr_t<_OtherIID> &p) { return _CompareUnknown(p)==0; }
   template<typename _OtherIID> bool operator==(_com_ptr_t<_OtherIID> &p) { return _CompareUnknown(p)==0; }
   template<typename _InterfaceType> bool operator==(_InterfaceType *p) { return _CompareUnknown(p)==0; }
-  template<typename _X> bool operator==(Interface *p) { return (m_pInterface==p) ? true : _CompareUnknown(p)==0; }
-  template<typename _X> bool operator==(const _com_ptr_t &p) throw() { return operator==(p.m_pInterface); }
-  template<typename _X> bool operator==(_com_ptr_t &p) throw() { return operator==(p.m_pInterface); }
+  bool operator==(Interface *p) { return (m_pInterface==p) ? true : _CompareUnknown(p)==0; }
+  bool operator==(const _com_ptr_t &p) throw() { return operator==(p.m_pInterface); }
+  bool operator==(_com_ptr_t &p) throw() { return operator==(p.m_pInterface); }
   bool operator==(int null) {
     if(null!=0) { _com_issue_error(E_POINTER); }
     return !m_pInterface;

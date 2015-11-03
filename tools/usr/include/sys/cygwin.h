@@ -1,3 +1,4 @@
+
 /* sys/cygwin.h
 
    Copyright 1997, 1998, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008,
@@ -150,7 +151,11 @@ typedef enum
     CW_GETNSSSEP,
     CW_GETPWSID,
     CW_GETGRSID,
-    CW_CYGNAME_FROM_WINNAME
+    CW_CYGNAME_FROM_WINNAME,
+    CW_FIXED_ATEXIT,
+    CW_GETNSS_PWD_SRC,
+    CW_GETNSS_GRP_SRC,
+    CW_EXCEPTION_RECORD_FROM_SIGINFO_T,
   } cygwin_getinfo_types;
 
 #define CW_LOCK_PINFO CW_LOCK_PINFO
@@ -208,12 +213,37 @@ typedef enum
 #define CW_GETPWSID CW_GETPWSID
 #define CW_GETGRSID CW_GETGRSID
 #define CW_CYGNAME_FROM_WINNAME CW_CYGNAME_FROM_WINNAME
+#define CW_FIXED_ATEXIT CW_FIXED_ATEXIT
+#define CW_GETNSS_PWD_SRC CW_GETNSS_PWD_SRC
+#define CW_GETNSS_GRP_SRC CW_GETNSS_GRP_SRC
+#define CW_EXCEPTION_RECORD_FROM_SIGINFO_T CW_EXCEPTION_RECORD_FROM_SIGINFO_T
 
 /* Token type for CW_SET_EXTERNAL_TOKEN */
 enum
 {
   CW_TOKEN_IMPERSONATION = 0,
   CW_TOKEN_RESTRICTED    = 1
+};
+
+/* Source type for CW_GETNSS_PWD_SRC and CW_GETNSS_GRP_SRC. */
+enum
+{
+  NSS_SRC_FILES = 1,
+  NSS_SRC_DB = 2
+};
+
+/* Enumeration source constants for CW_SETENT called from mkpasswd/mkgroup. */
+enum nss_enum_t
+{
+  ENUM_NONE = 0x00,
+  ENUM_CACHE = 0x01,
+  ENUM_FILES = 0x02,
+  ENUM_BUILTIN = 0x04,
+  ENUM_LOCAL = 0x08,
+  ENUM_PRIMARY = 0x10,
+  ENUM_TDOMS = 0x20,
+  ENUM_TDOMS_ALL = 0x40,
+  ENUM_ALL = 0x7f
 };
 
 #define CW_NEXTPID	0x80000000	/* or with pid to get next one */

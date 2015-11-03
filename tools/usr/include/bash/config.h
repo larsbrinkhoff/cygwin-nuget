@@ -1,7 +1,7 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h -- Configuration file for bash. */
 
-/* Copyright (C) 1987-2009 Free Software Foundation, Inc.
+/* Copyright (C) 1987-2009,2011-2012 Free Software Foundation, Inc.
 
    This file is part of GNU Bash, the Bourne Again SHell.
 
@@ -161,15 +161,21 @@
    memory contents on malloc() and free(). */
 #define MEMSCRAMBLE 1
 
-/* Define AFS if you are using Transarc's AFS. */
-/* #undef AFS */
-
 /* Define for case-modifying variable attributes; variables modified on
    assignment */
 #define CASEMOD_ATTRS 1
 
 /* Define for case-modifying word expansions */
 #define CASEMOD_EXPANSIONS 1
+
+/* Define to make the `direxpand' shopt option enabled by default. */
+/* #undef DIRCOMPLETE_EXPAND_DEFAULT */
+
+/* Define to make the `globasciiranges' shopt option enabled by default. */
+#define GLOBASCII_DEFAULT 0
+
+/* Define AFS if you are using Transarc's AFS. */
+/* #undef AFS */
 
 #define ENABLE_NLS 1
 
@@ -215,6 +221,9 @@
 
 /* The number of bytes in a double (hopefully 8). */
 #define SIZEOF_DOUBLE 8
+
+/* The number of bytes in an `intmax_t'. */
+#define SIZEOF_INTMAX_T 8
 
 /* The number of bytes in a `long long', if we have one. */
 #define SIZEOF_LONG_LONG 8
@@ -416,6 +425,18 @@
 
 #define HAVE_STRUCT_TIMEZONE 1
 
+#define WEXITSTATUS_OFFSET 8
+
+#define HAVE_STRUCT_TIMESPEC 1
+#define TIME_H_DEFINES_STRUCT_TIMESPEC 1
+/* #undef SYS_TIME_H_DEFINES_STRUCT_TIMESPEC */
+/* #undef PTHREAD_H_DEFINES_STRUCT_TIMESPEC */
+
+#define TYPEOF_STRUCT_STAT_ST_ATIM_IS_STRUCT_TIMESPEC 1
+/* #undef HAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC */
+/* #undef HAVE_STRUCT_STAT_ST_ATIMENSEC */
+/* #undef HAVE_STRUCT_STAT_ST_ATIM_ST__TIM_TV_NSEC */
+
 /* Characteristics of definitions in the system header files. */
 
 #define HAVE_GETPW_DECLS 1
@@ -423,6 +444,9 @@
 /* #undef HAVE_RESOURCE */
 
 /* #undef HAVE_LIBC_FNM_EXTMATCH */
+
+/* Define if you have <linux/audit.h> and it defines AUDIT_USER_TTY */
+#define HAVE_DECL_AUDIT_USER_TTY 0
 
 #define HAVE_DECL_CONFSTR 1
 
@@ -547,17 +571,20 @@
 /* Define if you don't have vprintf but do have _doprnt.  */
 /* #undef HAVE_DOPRNT */
 
+/* Define if you have the dprintf function.  */
+#define HAVE_DPRINTF 1
+
 /* Define if you have the dup2 function.  */
 #define HAVE_DUP2 1
 
 /* Define if you have the eaccess function.  */
 #define HAVE_EACCESS 1
 
+/* Define if you have the faccessat function.  */
+#define HAVE_FACCESSAT 1
+
 /* Define if you have the fcntl function.  */
 #define HAVE_FCNTL 1
-
-/* Define if you have the fdprintf function. */
-/* #undef HAVE_FDPRINTF */
 
 /* Define if you have the fpurge/__fpurge function.  */
 #define HAVE_FPURGE 1
@@ -618,6 +645,9 @@
 /* Define if you have the iconv function.  */
 #define HAVE_ICONV 1
 
+/* Define if you have the imaxdiv function.  */
+#define HAVE_IMAXDIV 1
+
 /* Define if you have the inet_aton function.  */
 #define HAVE_INET_ATON 1
 
@@ -629,12 +659,6 @@
 
 /* Define if you have the isgraph function.  */
 #define HAVE_ISGRAPH 1
-
-/* Define if you have the isinf function in libc */
-#define HAVE_ISINF_IN_LIBC 1
-
-/* Define if you have the isnan function in libc */
-#define HAVE_ISNAN_IN_LIBC 1
 
 /* Define if you have the isprint function.  */
 #define HAVE_ISPRINT 1
@@ -680,6 +704,9 @@
 
 /* Define if you have the mbscmp function. */
 /* #undef HAVE_MBSCMP */
+
+/* Define if you have the mbsnrtowcs function. */
+#define HAVE_MBSNRTOWCS 1
 
 /* Define if you have the mbsrtowcs function. */
 #define HAVE_MBSRTOWCS 1
@@ -762,6 +789,9 @@
 
 /* Define if you have the strchr function.  */
 #define HAVE_STRCHR 1
+
+/* Define if you have the strchrnul function.  */
+#define HAVE_STRCHRNUL 1
 
 /* Define if you have the strcoll function.  */
 #define HAVE_STRCOLL 1
@@ -868,8 +898,14 @@
 /* Define if you have the wctype function.  */
 #define HAVE_WCTYPE 1
 
+/* Define if you have the wcswidth function.  */
+#define HAVE_WCSWIDTH 1
+
 /* Define if you have the wcwidth function.  */
 #define HAVE_WCWIDTH 1
+
+/* and if it works */
+/* #undef WCWIDTH_BROKEN */
 
 /* Presence of certain system include files. */
 
@@ -929,6 +965,9 @@
 
 /* Define if you have the <memory.h> header file.  */
 #define HAVE_MEMORY_H 1
+
+/* Define if you have the <stdbool.h> header file. */
+#define HAVE_STDBOOL_H 1
 
 /* Define if you have the <stddef.h> header file. */
 #define HAVE_STDDEF_H 1
@@ -995,6 +1034,9 @@
 /* Define if you have the <termios.h> header file.  */
 #define HAVE_TERMIOS_H 1
 
+/* Define if you have the <ulimit.h> header file.  */
+/* #undef HAVE_ULIMIT_H */
+
 /* Define if you have the <unistd.h> header file.  */
 #define HAVE_UNISTD_H 1
 
@@ -1015,6 +1057,8 @@
 
 /* #undef HAVE_LIBSOCKET */
 
+/* Are we running the GNU C library, version 2.1 or later? */
+/* #undef GLIBC21 */
 
 /* Define if on MINIX.  */
 /* #undef _MINIX */
